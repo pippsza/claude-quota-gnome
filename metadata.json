@@ -1,0 +1,9 @@
+{
+  "uuid": "claude-quota@pippsza",
+  "name": "Claude Quota",
+  "description": "Shows Claude.ai (Pro/Max) usage limits in the top bar. Click the indicator for full stats; toggle which buckets appear in the panel. Data comes from a configurable helper script (tg-claude-bot's check_quota.py by default).",
+  "shell-version": ["48", "49"],
+  "settings-schema": "org.gnome.shell.extensions.claude-quota",
+  "url": "https://github.com/pippsza/claude-quota-gnome",
+  "version": 1
+}

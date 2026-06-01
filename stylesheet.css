@@ -1,0 +1,27 @@
+.claude-quota-label {
+    font-feature-settings: "tnum";
+    padding: 0 4px;
+}
+
+.claude-quota-warn {
+    color: #e5a50a; /* amber */
+}
+
+.claude-quota-crit {
+    color: #e01b24; /* red */
+    font-weight: bold;
+}
+
+.claude-quota-stale {
+    color: #9a9996; /* dimmed */
+}
+
+.claude-quota-menu-value {
+    margin-left: 12px;
+    color: #9a9996;
+    font-feature-settings: "tnum";
+}
+
+.claude-quota-header {
+    font-weight: bold;
+}

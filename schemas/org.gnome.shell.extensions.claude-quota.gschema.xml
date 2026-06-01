@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.claude-quota"
+          path="/org/gnome/shell/extensions/claude-quota/">
+
+    <key name="python-path" type="s">
+      <default>'/home/pippsza/code/tg-claude-bot/.venv/bin/python'</default>
+      <summary>Python interpreter</summary>
+      <description>Absolute path to the Python used to run the quota script.</description>
+    </key>
+
+    <key name="script-path" type="s">
+      <default>'/home/pippsza/code/tg-claude-bot/tools/check_quota.py'</default>
+      <summary>Quota script</summary>
+      <description>Absolute path to a script that prints the quota JSON to stdout.</description>
+    </key>
+
+    <key name="refresh-interval" type="i">
+      <range min="15" max="3600"/>
+      <default>120</default>
+      <summary>Refresh interval (seconds)</summary>
+      <description>How often to re-run the quota script.</description>
+    </key>
+
+    <key name="show-session" type="b">
+      <default>true</default>
+      <summary>Show 5-hour session bucket in the panel</summary>
+    </key>
+
+    <key name="show-weekly" type="b">
+      <default>true</default>
+      <summary>Show 7-day overall bucket in the panel</summary>
+    </key>
+
+    <key name="show-opus" type="b">
+      <default>false</default>
+      <summary>Show 7-day Opus bucket in the panel</summary>
+    </key>
+
+    <key name="show-sonnet" type="b">
+      <default>false</default>
+      <summary>Show 7-day Sonnet bucket in the panel</summary>
+    </key>
+
+    <key name="warn-threshold" type="i">
+      <range min="1" max="100"/>
+      <default>80</default>
+      <summary>Warn colour threshold (% used)</summary>
+    </key>
+
+    <key name="crit-threshold" type="i">
+      <range min="1" max="100"/>
+      <default>95</default>
+      <summary>Critical colour threshold (% used)</summary>
+    </key>
+
+  </schema>
+</schemalist>

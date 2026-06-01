@@ -1,0 +1,9 @@
+# compiled GSettings schema
+schemas/gschemas.compiled
+
+# packed bundle
+*.shell-extension.zip
+
+# editor / OS cruft
+.DS_Store
+*.swp
