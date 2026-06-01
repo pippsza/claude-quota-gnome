@@ -54,5 +54,25 @@
       <summary>Critical colour threshold (% used)</summary>
     </key>
 
+    <key name="emoji-icon" type="b">
+      <default>true</default>
+      <summary>Use an emoji face/icon in the panel instead of a letter</summary>
+    </key>
+
+    <key name="notifications" type="b">
+      <default>true</default>
+      <summary>Desktop notifications on threshold crossings and resets</summary>
+    </key>
+
+    <key name="show-eta" type="b">
+      <default>true</default>
+      <summary>Show burn-rate and ETA-to-limit in the dropdown</summary>
+    </key>
+
+    <key name="show-sparkline" type="b">
+      <default>true</default>
+      <summary>Show the 5-hour usage sparkline in the dropdown</summary>
+    </key>
+
   </schema>
 </schemalist>

@@ -25,3 +25,22 @@
 .claude-quota-header {
     font-weight: bold;
 }
+
+/* progress-bar row sits tight under its bucket switch */
+.claude-bar-row {
+    padding-top: 0;
+    padding-bottom: 6px;
+}
+
+.claude-bar {
+    min-width: 220px;
+}
+
+.claude-spark-row {
+    padding-top: 2px;
+    padding-bottom: 6px;
+}
+
+.claude-spark {
+    min-width: 220px;
+}

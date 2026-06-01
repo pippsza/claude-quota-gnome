@@ -31,6 +31,22 @@ export default class ClaudeQuotaPrefs extends ExtensionPreferences {
             settings.bind(key, row, 'active', Gio.SettingsBindFlags.DEFAULT);
         }
 
+        // --- Behaviour toggles --------------------------------------------
+        const feel = new Adw.PreferencesGroup({title: 'Look & feel'});
+        page.add(feel);
+
+        const featureToggles = [
+            ['emoji-icon',     'Emoji face in the panel', 'Show 😀 → 💀 instead of a plain “C”.'],
+            ['notifications',  'Desktop notifications',   'Alert on threshold crossings and limit resets.'],
+            ['show-eta',       'Burn-rate & ETA',         'Estimate time-to-limit in the dropdown.'],
+            ['show-sparkline', '5h usage sparkline',      'Mini trend chart in the dropdown.'],
+        ];
+        for (const [key, title, subtitle] of featureToggles) {
+            const row = new Adw.SwitchRow({title, subtitle});
+            feel.add(row);
+            settings.bind(key, row, 'active', Gio.SettingsBindFlags.DEFAULT);
+        }
+
         // --- Colour thresholds --------------------------------------------
         const colours = new Adw.PreferencesGroup({title: 'Colour thresholds (% used)'});
         page.add(colours);
