@@ -16,10 +16,11 @@
     </key>
 
     <key name="refresh-interval" type="i">
-      <range min="15" max="3600"/>
-      <default>120</default>
+      <range min="60" max="3600"/>
+      <default>300</default>
       <summary>Refresh interval (seconds)</summary>
-      <description>How often to re-run the quota script.</description>
+      <description>How often to re-run the quota script. Min 60s — the upstream
+      usage endpoint rate-limits, and the bot polls it independently.</description>
     </key>
 
     <key name="show-session" type="b">

@@ -280,7 +280,7 @@ class ClaudeIndicator extends PanelMenu.Button {
     // ----- timer / fetch --------------------------------------------------
     _restartTimer() {
         if (this._timerId) { GLib.source_remove(this._timerId); this._timerId = 0; }
-        const interval = Math.max(15, this._settings.get_int('refresh-interval'));
+        const interval = Math.max(60, this._settings.get_int('refresh-interval'));
         this._timerId = GLib.timeout_add_seconds(GLib.PRIORITY_DEFAULT, interval, () => {
             this._refresh();
             return GLib.SOURCE_CONTINUE;
